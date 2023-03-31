@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(78, 15, 28);
+}
+h1 {
+    color:azure;
+    margin-left: 100px;
+    text-shadow: 1px .5px 4px rgba(o,o,o, o.6);
+}
+
+.container {
+    width: 450px;
+    height: 450px;
+    background-color: burlywood;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+/* 
+SELECT ALL SQAURES IN THE ARRAY 
+*/
+
+.container .squares:nth-child(-n+4) {
+    background-image: url("../images/icons/icons.png");
+    color: #fff;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: transform .5s case-in-out;
+}
+
+/*
+SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
+*/
+
+.squares:nth-child(-n+4) p{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba(o,o,o, o.8);
+}
+
+/*
+INDIVIDUALLY SELECT A SQUARE IN THE ARRAY
+*/
+
+.squares:nth-child(1) {
+    background-color: aqua;
+}
+
+.squares:nth-child(2) {
+    background-color: chartreuse;
+}
+
+.squares:nth-child(3) {
+    background-color: rgb(255, 0, 200);
+}
+
+.squares:nth-child(4) {
+    background-color: rgb(255, 196, 0);
+}
+
+/*
+HOVER, TRANSLATE, TRANSFORM EFFECTS
+*/
+
+
+.container .squares:nth-child(-n+4):hover {
+    background-image: url("../images/icons/icons2.png") ;
+    transform: scale(o.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
+}
+
+.squares:nth-child(1):hover {
+    background-color: coral;
+}
+
+.squares:nth-child(2):hover {
+    background-color: rgb(80, 200, 255);
+}
+
+.squares:nth-child(3):hover {
+    background-color: rgb(255, 80, 80);
+}
+
+.squares:nth-child(4):hover {
+    background-color: rgb(109, 255, 80);
+}
+
+/* 
+ANIMATION EFFECT 
+*/
+
+@keyframes race {
+    0%, 100% {
+        transform: translateY(0px);
+        background-image: url("../images/icons/icons2.png");
+    }
+
+    50% {
+        transform: translateY(300px);
+
+    }
+}
