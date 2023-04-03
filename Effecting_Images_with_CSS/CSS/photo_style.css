@@ -9,7 +9,7 @@ p {
     line-height: 0;
     margin-bottom: 2px;
     overflow:hidden;
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 1px;
     border: 1px solid black;
     box-shadow: 2px 2px 10px grey;
@@ -81,6 +81,7 @@ p {
 
 /* Coded I added that is not in the TUTORIAL */
 
+/* For the image to fit in the box */
 img {
     max-width: 100%;
     max-height: 100%;
