@@ -1,0 +1,76 @@
+body {
+    background:rgb(179, 201, 156);
+}
+
+.wrap {
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+
+.menu-container {
+    top: 0;
+    left: 0;
+    /* To the top of the screen */
+    position: absolute;
+    width: 100%;
+    background-color:rgb(179, 201, 156);
+}
+
+.menu {
+    font: bold 12px/18px/ arial;
+    text-align: center;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin-right: -2px;
+    position: relative;
+    padding: 12px 40px;
+    border: 1px solid rgb(1, 56, 1);
+    border-radius: 1.5px;
+    background-color: rgb(164, 188, 146);
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: rgb(179, 201, 156);
+    color:black;
+}
+
+.menu li:hover ul{
+    display: block;
+    opacity: 1;
+    /* While hovered, drop down-meenu appears
+    This also avoids a block-level bug */
+    visibility: visible;
+}
+
+.submenu {
+    padding: 0;
+    left: 0;
+    position: absolute;
+    top: 43.5px;
+    width: 125.5px;
+    opacity: 0;
+    /* While not being hovered, drop down menu hides
+    This also avoids a block-level bug */
+    visibility: hidden;
+}
+
+.submenu li {
+    background-color: rgb(199, 233, 176) ;
+    display: block;
+    color:black;
+}
+
+.submenu li:hover {
+    color:white;
+    background-color:rgb(164, 188, 146);
+}
