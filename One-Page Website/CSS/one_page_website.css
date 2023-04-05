@@ -1,0 +1,138 @@
+/* TEXT SECTIONS, HEADINGS, PARAGRAPHS ETC. */
+
+body {
+    background-color: rgb(44, 37, 37);
+}
+
+h1, h3, h4, p {
+    font-family: 'Courier New', monospace;
+}
+
+h1 {
+    font-size: 130px;
+    text-align: center;
+    padding: 100px 20px;
+    letter-spacing: 10px;
+    margin: 0 auto;
+    border: 3px solid rgba(1, 138, 33, 0.466);
+    border-radius: 10px;
+    background-color: rgb(153, 233, 153);
+    color:rgb(180, 238, 180);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    width: 1300px;
+}
+
+h3 {
+    font-size: 50px;
+    text-align: center;
+    padding: 100px 20px;
+    letter-spacing: 5px;
+    margin: 0 auto;
+    text-decoration: underline;
+    color: rgb(180, 238, 180);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+p {
+    text-align: center;
+    padding-bottom:100px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+/* WRAP, makes sure images don't overflow */
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+/* MENU */
+
+.menu-container {
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+    position: fixed;
+    z-index: 100;
+    text-align: center;
+
+}
+
+/* HOME SECTION */
+
+#home {
+    background: url(../Images/background.jpg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-backdrop-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 300px;
+    padding-bottom: 250px;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* FLEX CONTAINER */
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(28, 112, 66, 0.644) ;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, .8);
+}
+
+.flex-container-home {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(8, 165, 79, 0.466) ;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, .8);
+}
+
+/* CONTACT SECTION */
+
+#contact {
+    background-color: rgb(44, 37, 37);
+    color: white;
+}
+
+.contact-info{
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 140px;
+    padding-left: 40px;
+    padding-right:40px;
+    border-radius: 15px;
+    margin: 0 auto;
+    background-color: rgba(95, 80, 80, 0.089);
+
+}
+
+.contact-info form {
+    font-size: 15px;
+    outline:none;
+    font-weight: 600;
+    color: rgb(180, 238, 180);
+    padding: 12px 12px;
+    width: 70%;
+    margin: 2% auto;
+    border-radius: 7px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}

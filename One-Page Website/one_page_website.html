@@ -3,17 +3,19 @@
 	<head>
 		<title> One Page Website </title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="./CSS/one_page_website.css">
+		<link rel="stlyeshett" href="./CSS/one_page_website_animation.css">
 	</head>
 	<body>
 	
 		<!-- NAVIGATION -->
-		<div>
-			<nav>
-				<table>
-					<a href="#home" id="link"><tr> HOME </tr></a>
-					<a href="#gallery"><tr> GALLERY </tr></a>
-					<a href="#contact"><tr> CONTACT </tr></a>
-				</table>
+		<div >
+			<nav class="wrap" >
+				<ul class="menu-container">
+					<a href="#home" id="link"><li> HOME </li></a>
+					<a href="#gallery"><li> GALLERY </li></a>
+					<a href="#contact"><li> CONTACT </li></a>
+				</ul>
 			</nav>
 		</div>
 	
@@ -22,41 +24,41 @@
 		<!-- HOME -->
 		<section>
 			<div id="home">
-				<div>
+				<div >
 					<h1> PET HAVEN </h1>
 					<p> Come have your pets come to us for the best time of their lives<br>
 						We guarantee their safety, health and especially play time! <br>
 						Just fill in the information below and we'll get back to you ASAP!</p>
-					<img src="./images/home_dog.jpg" alt="Image dog playing with another dog" width="1000">
+					<img class="flex-container-home" src="./images/home_dog.jpg" alt="Image dog playing with another dog" width="1000">
 				</div>
 			</div>
 		</section>
 		<!-- END OF HOME -->
 		
 		<!-- GALLERY -->
-		<section>
-			<div id="gallery">
-				<div>
+		<section id="gallery">
+			<div>
+				<div class="container">
 					<h3> ANIMAL GALLERY </h3>
-					<div>
+					<div class="flex-container">
 					
 						<!-- PHOTO CONTAINER 1 -->
-							<div>
-								<img src="./images/gallery_cat_1.jpg" alt="Image of 2 cats playing together" width="500px">
+							<div class="photo-container">
+								<img class="photo" src="./images/gallery_cat_1.jpg" alt="Image of 2 cats playing together" width="500px">
 								<h4> Our pets here have lots of fun. </h4>
 							</div>
 						<!-- END OF PHOTO CONTAINTER 1 -->
 						
 						<!-- PHOTO CONTAINER 2 -->
-							<div>
-								<img src="./images/gallery_dog_1.jpg" alt="Image of a puppy with a red ball in its mouth" width="500px">
+							<div class="photo-container">
+								<img class="photo" src="./images/gallery_dog_1.jpg" alt="Image of a puppy with a red ball in its mouth" width="500px">
 								<h4> Our pets here have lots of fun. </h4>
 							</div>
 						<!-- END OF PHOTO CONTAINTER 2 -->
 						
 						<!-- VIDEO CONTAINER 1 -->
-							<div>
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/Zkki8cvALrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							<div class="video-container">
+								<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Zkki8cvALrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 								<h4> Our pets here have lots of fun. </h4>
 							</div>
 						<!-- VIDEO CONTAINTER 1 -->
@@ -71,7 +73,7 @@
 		<!-- CONTACT -->
 		<section>
 			<div id="contact">
-				<div>
+				<div class="contact-info">
 					<h3><span>SPOIL YOUR PETS NOW!</h3></span>
 					<p>Your pets happiness starts with you! <br>
 					 And by filling in the information below</p>

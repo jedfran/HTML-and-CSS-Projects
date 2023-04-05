@@ -47,7 +47,6 @@
     border: 1px solid rgb(241, 231, 171);
     background-color:rgb(73, 98, 134);
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.8);
-    z-index: 1;
 
 }
 
@@ -76,7 +75,6 @@
     justify-content: center; /*For centering text inside .photo-overlay*/
     align-items: center;
     background-color: rgba(250, 171, 125, 0.438);
-    z-index: 2;
 }
 
 .white-head {
