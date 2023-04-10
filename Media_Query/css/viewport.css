@@ -1,0 +1,10 @@
+
+body {
+    color:red;
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        color:blue;
+    }
+}

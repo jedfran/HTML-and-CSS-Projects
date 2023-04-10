@@ -1,0 +1,213 @@
+/* STYLESHEET FOR CHALLENGES */
+
+h4 {
+    /* Centering text "Snoopy the dog"*/
+    text-align: center;
+    font-family: garamond;
+    font-size: 40px;
+}
+
+img {
+    /* Center Image */
+    position:relative;
+    margin:0px auto;
+    overflow:hidden;
+    
+    /*Adding a filter to image*/
+    filter:contrast(200%);
+
+    /* Adding rounded borders */
+    border-radius: 20px;
+}
+
+.center {
+    /* Centering text and making it bold */
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/* TABLE PROPERTIES */
+table {
+    border: 2px solid rgba(212, 36, 212, 0.705);
+    border-radius: 7px;
+    width: 100%;
+}
+/* adjusting table header height */
+th {
+    height: 2em;
+}
+/* added padding on table data and bolded the text */
+td { 
+    padding: 1em;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.432);
+}
+/* hoverable data */
+td:hover {
+    background-color: rgba(212, 36, 212, 0.705);
+}
+
+/* table header colors */
+.red{
+    background-color: rgba(231, 94, 94, 0.466);
+    color:rgb(255, 0, 0);
+}
+.blue {
+    background-color: rgba(74, 74, 236, 0.452);
+    color:blue;
+}
+.green {
+    background-color: rgba(73, 236, 73, 0.479);
+    color:rgb(0, 138, 0);
+}
+
+
+
+/* putting text on the center of image */
+
+.img-container {
+    position: relative;
+    text-align: center;
+    color:white;
+    margin: 7em auto;
+    width:600px;
+    height:330px;
+
+}
+
+.img-container img {
+    width:100%;
+    width:600px;
+    height:330px;
+}
+
+ .img-container h4 {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+
+/* NAVBAR PROPERTIES */
+
+.navbar {
+    /* fixed the position of navbar */
+    position:fixed; 
+    width: 100%;
+    /* Positioned at the top left */
+    top:1em;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.navbar a {
+    display:inline-block;
+    padding: 15px 8%;
+    position:relative;
+    background-color: rgba(212, 36, 212, 0.705);
+    color:white;
+    border: 8px solid rgba(0, 0, 0, 0.365);
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: .4em;
+}
+
+/* Hover Effects on the navbar */
+
+.navbar a:hover {
+    background-color: grey;
+    color:rgb(255, 0, 255);
+    font-weight: 600;
+    transition-duration: .2s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+/* CREATING 2 COLUMNS */
+
+.row:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+
+.column {
+    float:left;
+    width:50%;
+    height:50%;
+    color: rgb(44, 153, 243);
+
+}
+
+/* PARAGRAPH PROPERTIES */
+
+p {
+    text-align: center;
+    padding: 2em;
+    margin: 0 auto;
+    width: 30%;
+    font-family:'Courier New', Courier, monospace;
+}
+ 
+p:hover {
+    color: rgb(44, 153, 243);
+}
+
+/* Picture overlay and text */
+
+.overlay {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    height:100%;
+    width:100%;
+    opacity:0;
+    transition: .9s ease;
+    background-color: rgba(255, 0, 255, 0.349);
+    border-radius: 20px;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+/* VIDEO PROPERTIES */
+
+.video {
+    width:600px;
+    height:300px;
+    display:block;
+    margin: 0 auto;
+}
+
+.video-container {
+    position:relative;
+    text-align: center;
+    color:black;
+}
+
+.video-container h5 {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
