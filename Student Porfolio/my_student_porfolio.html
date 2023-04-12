@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Portfolio</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./stylesheet/my_portfolio.css">
+        <link rel="shortcut icon" type="image/png" href="./images/my_portfolio/favicon.png">
+    </head>
+
+    <body class="background">
+        <!-- Navbar -->
+        <div class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#github">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </body>
+
+    <!-- breaks to add space between navbar and first heading -->
+    <br>
+    <br>
+    <br>
+
+    <!-- Background video -->
+    <div id="home">
+        <video autoplay muted loop id="bg_video">
+            <source src="images/my_portfolio/bg_video.mp4" type="video/mp4">
+            <!--Display message if video fails to run-->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    
+    <!-- Video text -->
+    <div class="video-text">
+        <h1 class="title-text">Jedo Francisco</h1>
+        <strong>
+            <p class="center">
+                <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                    <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                    <br>field of battle and to command such unswervingly dutiful actors or troops.
+                </q>
+                <br>
+                <br>-Joseph Weizenbaum
+                <br>
+                <br> My name is Jedo Francisco. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                <br>
+                <br> Thank you for stopping by and enjoy! 
+            </p>
+        </strong>
+    </div>
+
+    <!-- About Section -->
+    <div class="row" id="about">
+        <!-- Left column -->
+        <div class="column_1">
+            <img src="./images/my_portfolio/kid_computer.jpg" alt="Image of a kid in front of a computer">
+        </div>
+
+        <!-- Right column -->
+        <div class="column_2">
+            <h1>About</h1>
+            <p>
+                    I am a software developer, who loves to code! I enjoy traveling and spending time with my love ones.
+                <br>
+                <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                <br>
+                <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+        
+            </p>
+        </div>
+    </div>
+
+    <!-- GitHub section -->
+    <div class="row" id="github">
+        <!-- Left column -->
+        <div class="column_2">
+            <h1>GitHub</h1>
+            <p>
+                You can view my coding projects on my GitHub account here:
+                <br>
+                <p class="center"> <a href="https://github.com/jedfran" target="_blank"> Jedo's GitHub</a></p>
+            </p>
+        </div>
+
+        <!-- Right column -->
+        <div class="column_1">
+            <a href="https://github.com/jedfran" target="_blank">
+                <img src="./images/GitHub.png" alt="GitHub Logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div class="row" id="contact">
+        <!-- Contact image, left column -->
+        <div class="column_1 column_tall">
+            <img src="./images/my_portfolio/contact_img.jpg" alt="Image of 3 phones">
+        </div>
+
+        <!-- Contact form, right column -->
+        <div class="column_2 column_tall"> 
+            <h1>Contact</h1>
+            <!--This specifies where and how to send the form data; we are leaving it blank-->
+            <form action="" method="post"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                <label>Name:</label>
+                    <input type="text" placeholder="Enter name here">
+                <label>Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter email here">
+                <label>Message:</label>
+                    <input type="text" id="message" name="message" placeholder="Enter message here">
+                    <!-- Submit Button -->
+                    <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!--Footer section-->
+     <footer>
+        <p>
+            <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+            <br>
+            </p>
+    </footer>
+</html>
