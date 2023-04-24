@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> One Page Website </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./CSS/one_page_website.css">
+		<link rel="stlyesheet" href="./CSS/one_page_website_animation.css">
+        <script src="./JS/main.js" defer></script>
+	</head>
+	<body>
+	
+		<!-- NAVIGATION -->
+		<div >
+			<nav class="wrap" >
+                <div    class="menu-container"> 
+                    <ul class="menu">
+                        <a href="#home" id="link"><li> HOME </li></a>
+                        <a href="#gallery"><li> GALLERY </li></a>
+                        <a href="#contact"><li> CONTACT </li></a>
+                    </ul>
+                </div>
+			</nav>
+		</div>
+	
+		<!-- END OF NAVIGATION -->
+		
+		<!-- HOME -->
+		<section>
+			<div id="home">
+				<div >
+					<h1> PET HAVEN </h1>
+					<p> Come have your pets come to us for the best time of their lives<br>
+						We guarantee their safety, health and especially play time! <br>
+						Just fill in the information below and we'll get back to you ASAP!</p>
+					<img class="flex-container-home" src="./images/home_dog.jpg" alt="Image dog playing with another dog" width="1000">
+				</div>
+			</div>
+		</section>
+		<!-- END OF HOME -->
+		
+		<!-- GALLERY -->
+		<section id="gallery">
+					<h3> ANIMAL GALLERY </h3>
+					<div class="row"> 
+								<div class="column">
+									<img class="photo" src="./images/gallery_cat_1.jpg" onclick="openModal();currentSlide(1)" alt="Image of 2 cats playing together" width="500px">
+									<h4> Our pets here have lots of fun. </h4>
+								</div>
+							
+								<div class="column">
+									<img class="photo" src="./images/gallery_dog_1.jpg" onclick="openModal();currentSlide(2)" alt="Image of a puppy with a red ball in its mouth" width="500px">
+									<h4> Our pets here have lots of fun. </h4>
+								</div>
+								<div class="column">
+									<img class="photo" src="./Images/dog_playing.jpg" onclick="openModal();currentSlide(3)" alt="dogs playing" width="500px">
+									<h4> Our pets here have lots of fun. </h4>
+								</div>
+
+                                <!-- LIGHT BOX -->
+                                <div id="myModal" class="modal">
+                                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                                    <div class="modal-content">
+
+                                        <div class="mySlides">
+                                            <div class="numbertext"> 1 / 3</div>
+                                            <img src="./Images/gallery_cat_1.jpg" style="width:100%; height: 100%;">
+                                        </div>
+
+                                        <div class="mySlides">
+                                            <div class="numbertext"> 2 / 3</div>
+                                            <img src="./Images/gallery_dog_1.jpg" style="width:100%; height: 100%;">
+                                        </div>
+
+                                        <div class="mySlides">
+                                            <div class="numbertext"> 3 / 3</div>
+                                            <img src="./Images/dog_playing.jpg" style="width:100%; height: 100%;">
+                                        </div>
+                                        
+                                <!-- NEXT AND PREV CONTROLS -->
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                    </div>
+                        
+                                <!-- THUMBNAILS -->
+                                    <div class="column">
+                                        <img class="demo cursor" src="./Images/gallery_cat_1.jpg" style="width:100%" onclick="currentSlide(1)">
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="./Images/gallery_dog_1.jpg" style="width:100%" onclick="currentSlide(2)">
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="./Images/dog_playing.jpg" style="width:100%" onclick="currentSlide(3)">
+                                    </div>
+                                    
+                                </div>
+
+							<!-- VIDEO CONTAINER 1 -->
+								<div class="video-container">
+									<iframe class="video" width="560" height="315" onclick="openModal();currentSlide(3)" src="https://www.youtube.com/embed/Zkki8cvALrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									<h4> Our pets here have lots of fun. </h4>
+								</div>
+							<!-- VIDEO CONTAINTER 1 -->
+					</div>
+		</section>
+
+
+		<!-- END OF GALLERY -->
+		
+		<!-- CONTACT -->
+		<section>
+			<div id="contact">
+				<div class="contact-info">
+					<h3><span>SPOIL YOUR PETS NOW!</h3></span>
+					<p>Your pets happiness starts with you! <br>
+					 And by filling in the information below</p>
+						<div>
+							<form action="" method="post">
+								First Name: <input class="contact" type="text" value=""><br>
+								Last Name: <input class="contact" type="text" value=""><br>
+								Email: <input class="contact" type="text" value=""><br>
+								Phone Number <input class="contact" type="text" value=""><br>
+									<div class="form-spacer">
+										<label> Terms and Conditions </label>
+									</div>
+								<div>
+									<input type="submit" value="SUBMIT">
+								</div>
+							</form>
+						</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF CONTACT -->
+		
+		<!-- FOOTER -->
+		<section>
+			<div>
+				www.petshaven.com &nbsp;|&nbsp; &copy; 2021
+			</div>
+		</section>
+	
+	</body>
+</html>							
