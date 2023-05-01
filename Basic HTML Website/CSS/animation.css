@@ -1,4 +1,7 @@
 /* MENU SECTION ANIMATION */
+html {
+    scroll-behavior: smooth; /*Makes jump links smoother instead of instantly jumping*/
+}
 
 .menu {
     color:rgb(165, 215, 232);
